@@ -11,7 +11,7 @@ public class Taches {
     private Date date;
     private String status;
     private String resolution;
-    
+
     public Taches(int id, String createur, String description, Date date, String status, String resolution){
         this.id = id;
         this.createur = createur;
@@ -23,6 +23,14 @@ public class Taches {
 
     public int getId() {
         return id;
+    }
+
+    public void setStatus(String message){
+        this.status = message;
+    }
+
+    public void setDate(Date date){
+        this.date = date;
     }
 
     @Override
